@@ -24,7 +24,7 @@ const GameSchema = new mongoose.Schema({
   year: {
     type: Number,
   },
-  Genre: {
+  genre: {
     type: String,
   },
   notes: {
