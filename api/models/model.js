@@ -30,6 +30,9 @@ const GameSchema = new mongoose.Schema({
   notes: {
     type: String,
   },
+  picture: {
+    type: String,
+  },
 });
 
 module.exports = mongoose.model('Game', GameSchema);

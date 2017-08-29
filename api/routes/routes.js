@@ -1,18 +1,18 @@
-model.exports = (app) => {
-  const controllerMethods = require( // fill this in when I get there
+module.exports = (app) => {
+  const controllerMethods = require('../controllers/controllers');
 
   // GET /games ---> get all the games
-  server.route('/games')
-    .get(controllerMethods.listGames);
   // POST /games --> create a game
-  server.route('/games')
+  app.route('/games')
+    .get(controllerMethods.listGames)
     .post(controllerMethods.createGame);
+//   app.route('/games')
   // GET /games/:id ---> get a single game
-  server.route('/games/:id')
+  app.route('/games/:id')
     .get(controllerMethods.findGame);
-  // DELETE /games/:id ---> delete a game
-  server.route('/games/:id')
-    .delete(controllerMethods.deleteGame);
+//  // DELETE /games/:id ---> delete a game
+//  server.route('/games/:id')
+//    .delete(controllerMethods.deleteGame);
 };
 
 
