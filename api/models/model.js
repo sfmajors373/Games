@@ -7,7 +7,7 @@ const GameSchema = new mongoose.Schema({
   },
   console: {
     type: String,
-    enum: ['Atari', 'Playstation', 'Playstation II', 'Playstation Portable', 'Playstation Vita', 'Gameboy', 'Gameboy Color', 'Gameboy Advance']
+    enum: ['Atari'],
   },
   altTitle: {
     type: String,
