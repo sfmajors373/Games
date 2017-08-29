@@ -1,0 +1,20 @@
+{
+  "name": "retrogames",
+  "version": "1.0.0",
+  "author": "Sarah",
+  "scripts": {
+    "start": "NODE_ENV=development webpack-dev-server",
+    "build": "NODE_ENV=build webpack"
+  },
+  "devDependencies": {
+    "babel-loader": "^7.1.2",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.5",
+    "file-loader": "^0.11.2",
+    "react-hot-loader": "^3.0.0-beta.7",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.5.5",
+    "webpack-dev-server": "^2.7.1",
+    "webpack-merge": "^4.1.0"
+  }
+}
